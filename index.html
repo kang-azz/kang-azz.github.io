@@ -63,7 +63,7 @@ function draw() {
 ctx.clearRect(0, 0, c.width, c.height);
 for (let asteroid of asteroids)
 asteroid.update();
-if (start) {
+if (Mulai) {
 ctx.beginPath();
 ctx.fillStyle = "gold";
 ctx.textBaseline = "middle";
@@ -76,13 +76,13 @@ ctx.textBaseline = "middle";
 ctx.textAlign = "center";
 ctx.font = x/12 + "px monospace";
 ctx.fillText(Date.now()%2000<1000?"-Tap to start-":"-Play now-", c.width/2, c.height/2);
-} else if(gameover) {
+} else if(Permainan Selesai) {
 ctx.beginPath();
 ctx.fillStyle = "red";
 ctx.textBaseline = "middle";
 ctx.textAlign = "center";
 ctx.font = "bold " + x/7 + "px monospace";
-ctx.fillText("Game over", c.width/2, c.height/4);
+ctx.fillText("", c.width/2, c.height/4);
 ctx.beginPath();
 ctx.fillStyle = "violet";
 ctx.textBaseline = "middle";
